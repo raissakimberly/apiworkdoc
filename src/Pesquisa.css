@@ -1,0 +1,98 @@
+/* Pesquisa.css */
+.custom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #a0d0fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.corner-image {
+  max-width: 150px;
+}
+
+.custom-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.custom-input.active {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.form-control {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  border-right: 1px solid #ccc;
+  outline: none;
+}
+
+.btn-custom {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-custom:hover {
+  background-color: #0056b3;
+}
+
+.lista-resultados {
+  text-align: left;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.movie-card {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+/* Estilos para a imagem */
+.img-movendo {
+  width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto;
+  position: relative;
+  animation: mover 2s ease-in-out infinite alternate; /* Adiciona a animação */
+}
+
+/* Define a animação */
+@keyframes mover {
+  0% {
+    transform: translateX(0); /* Começa na posição original */
+  }
+  100% {
+    transform: translateX(200px); /* Move a imagem 200px para a direita */
+  }
+}
